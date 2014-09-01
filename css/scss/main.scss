@@ -1,0 +1,29 @@
+@import "base/all";
+
+@import "helpers/all";
+
+@import "modules/all";
+
+/*
+ * Generic Body styles
+ */
+body {
+  font: {
+    size: 100%;
+    family: $primary-font; // variables inside partials > _variables.scss
+  }  
+}
+
+.wc-container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+
+    padding: 2em;
+
+    &::after { /* Clearfix */
+        content: '';
+        display: table;
+        clear: both;
+    }
+}

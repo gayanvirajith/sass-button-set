@@ -1,0 +1,116 @@
+/**
+ *
+ * Reset styles thanks to meyerweb.com.
+ * http://meyerweb.com/eric/tools/css/reset/ 
+ * v2.0 | 20110126
+ * License: none (public domain)
+ *
+ */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, main {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/**
+ * Returns lighter color
+ */
+/*
+ * Rem fallback - credits: http://zerosixthree.se/
+ */
+/**
+ * CSS border radius mixin
+ */
+/*
+ * CSS box shadow mixin
+ */
+/*
+ * Css font-size mixin
+ */
+.btn {
+  padding: 5px;
+  line-height: 5px;
+  position: relative;
+  margin-bottom: 20px;
+  color: #FFFFFF;
+  border: 1px solid #EEEEEE;
+  text-decoration: none;
+  letter-spacing: 1px;
+  border-bottom-width: 2px;
+  -webkit-border-radius: 0.2em;
+  -moz-border-radius: 0.2em;
+  -ms-border-radius: 0.2em;
+  -o-border-radius: 0.2em;
+  border-radius: 0.2em;
+  -webkit-box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+  -ms-box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+  -o-box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+  font-size: 10px;
+  font-size: 0.625rem; }
+
+.btn-secondary {
+  border-color: #23A38F;
+  background: rgba(35, 163, 143, 0.8); }
+
+.btn-important {
+  border-color: #F0563D;
+  background: rgba(240, 86, 61, 0.8); }
+
+/*
+ * Generic Body styles
+ */
+body {
+  font-size: 100%;
+  font-family: "Roboto", sans-serif; }
+
+.wc-container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2em; }
+  .wc-container::after {
+    /* Clearfix */
+    content: '';
+    display: table;
+    clear: both; }
+
+/*# sourceMappingURL=main.css.map */
