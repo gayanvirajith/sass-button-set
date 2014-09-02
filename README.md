@@ -7,6 +7,6 @@ Re-usable sass button module.
 #### Todo list
 
 - [x] Generic button
-- [ ] Hover effects
+- [x] Hover effects
+- [x] CSS transforms
 - [ ] Few more button types (For now only have two types)
-- [ ] CSS transforms
