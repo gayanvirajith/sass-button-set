@@ -50,15 +50,16 @@ table {
   border-spacing: 0; }
 
 .btn {
-  padding: 5px;
+  padding: 10px;
   line-height: 5px;
   position: relative;
   margin: 0 5px 20px 0;
-  color: #FFFFFF;
+  color: white;
   border: 1px solid #EEEEEE;
   text-decoration: none;
   letter-spacing: 1px;
   border-bottom-width: 2px;
+  display: inline-block;
   -webkit-border-radius: 0.2em;
   -moz-border-radius: 0.2em;
   -ms-border-radius: 0.2em;
@@ -71,14 +72,32 @@ table {
   box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
   font-size: 12px;
   font-size: 0.75rem; }
+  .btn:hover, .btn:focus {
+    -webkit-transition: background 0.2s;
+    -moz-transition: background 0.2s;
+    -ms-transition: background 0.2s;
+    -o-transition: background 0.2s;
+    transition: background 0.2s; }
+  .btn:active {
+    -webkit-transform: translateY(1px);
+    -moz-transform: translateY(1px);
+    -ms-transform: translateY(1px);
+    -o-transform: translateY(1px);
+    transform: translateY(1px); }
 
 .btn-secondary {
-  border-color: #23A38F;
+  border-color: #23a38f;
   background: rgba(35, 163, 143, 0.8); }
+  .btn-secondary:hover, .btn-secondary:focus {
+    border-color: #1e8e7d;
+    background: rgba(30, 142, 125, 0.8); }
 
 .btn-important {
-  border-color: #F0563D;
+  border-color: #f0563d;
   background: rgba(240, 86, 61, 0.8); }
+  .btn-important:hover, .btn-important:focus {
+    border-color: #ee4125;
+    background: rgba(238, 65, 37, 0.8); }
 
 /*
  * Generic Body styles
@@ -97,5 +116,3 @@ body {
     content: '';
     display: table;
     clear: both; }
-
-/*# sourceMappingURL=main.css.map */

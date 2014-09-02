@@ -1,5 +1,5 @@
 %button {
-	padding: 5px;
+	padding: 10px;
 	line-height: 5px;
 	position: relative;
 	margin: 0 5px 20px 0;
@@ -8,13 +8,18 @@
 	text-decoration: none;
 	letter-spacing: 1px;
 	border-bottom-width: 2px;
-	
+	display: inline-block;
+
 	@include border-radius(.2em);
 	@include box-shadow(1px, 1px, 3px, $button-shadow-color);
 	@include font-size(12px);
 
-	&:hover, &:active, &:focus {
-	
+	&:hover, &:focus {
+		@include transition(background 0.2s);    	   
+	}
+
+	&:active {
+		@include transform(translateY(1px));
 	}
 }
 
@@ -25,9 +30,19 @@
 .btn-secondary {
 	border-color: $button-secondary;
 	background: opacity($button-secondary);	
+
+	&:hover, &:focus {
+		border-color: darken($button-secondary, 5%);
+		background: opacity(darken($button-secondary, 5%));		
+	}
 }
 
 .btn-important {
 	border-color: $button-error;	
 	background: opacity($button-error);	
+
+	&:hover, &:focus {
+		border-color: darken($button-error, 5%);
+		background: opacity(darken($button-error, 5%));		
+	}
 }

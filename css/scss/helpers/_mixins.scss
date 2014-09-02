@@ -24,8 +24,36 @@
 
 
 
+// Css transform property
+@mixin transform($property) { 
+	-webkit-transform: $property;
+       -moz-transform: $property;
+        -ms-transform: $property;
+         -o-transform: $property;
+            transform: $property;
+}
+
+
+
+
+
+// Css transition
+@mixin transition($property) {
+	-webkit-transition: $property;
+	   -moz-transition: $property;
+	    -ms-transition: $property;
+	     -o-transition: $property;
+	        transition: $property;
+}
+
+
+
+
+
 // Css font-size mixin
 @mixin font-size($size) {
   font-size: $size;
   font-size: calculateRem($size);
 }
+
+
